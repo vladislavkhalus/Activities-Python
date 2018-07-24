@@ -1,0 +1,122 @@
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+
+print( "Hello World") 
+
+#define an integer 
+print("\nHow to initialize an integer:")
+myint = 7 
+print(myint) 
+
+#define a floating point number
+print("\nHow to initialize floating point number:")
+myfloat = 7.0
+print(myfloat)
+myfloat = float(7)
+print(myfloat) 
+
+
+print("\nHow to initialize strings:")
+mystring = 'hello' 
+print(mystring)
+mystring = "hello" #with this version, you can use apostrophes
+print(mystring)  
+
+print("\nHow to do operations on numbers and strings:")
+one = 1
+two = 2
+three = one + two 
+print(three)
+
+hello = "hello"
+world = "world"
+helloworld = hello + " " + world 
+print(helloworld) 
+
+print("\nHow to do assignments :")
+a, b = 3,4
+print(a,b) 
+
+print("\nHow to do assignments :") 
+
+print("\nEXERCISES :")
+mystring = "hello" 
+myfloat = 10.0 
+myint = 20 
+
+# testing code 
+if mystring == "hello": 
+    print("String: %s" % mystring)
+if isinstance(myfloat, float) and myfloat:
+    print("Float: %f" % myfloat) 
+if isinstance(myint, int) and myint == 20:
+    print("Integer: %d" % myint)
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+print("\nHOW TO DO LISTS :")
+mylist = []
+mylist.append(1)
+mylist.append(2)
+mylist.append(3)
+print(mylist[0]) # prints 1
+print(mylist[1]) # prints 2
+print(mylist[2]) # prints 3 
+
+#prints out 1,2,3 
+for x in mylist:
+    print(x) 
+    
+print("LIST EXERCISE") 
+numbers = []
+strings = []
+names = ["John", "Eric", "Jessica"]
+numbers.append(1)
+numbers.apend(2)
+numbers.append(3)
+
+strings.append("hello")
+strings.append("world")
+
+second_name = names[1] 
+print(numbers)
+print(strings)
+print("The second name on the names list is %s" % second_name)
+
+/////////////////////////////////////////////////////
+
+
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+array = []
+pelidrome_input = input("Input word to check for pelidrome ")
+divide2 = len(pelidrome_input)  
+input_size = len(pelidrome_input)
+counter = 0
+for j in range(input_size):
+    array.append(pelidrome_input[j])
+size_array = len(array)
+for i in range(divide2):
+    if array[i] != array[size_array-1-i]:
+        counter = counter + 1
+if counter == 0:
+    print("It's a pelidrome")
+else: 
+    print("It's not a pelidrome")
+        
